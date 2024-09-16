@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03 de JS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: black;
+            background-color: rgb(187, 164, 209);
+        }
+    </style>
+</head>
+<body>
+    <h1>Mód B de JS - Aula 06) Tratamento de dados</h1>
+    <h2>Exercício 03 - Tratamento de dados com variável do tipo number</h2>
+    <!--- Criando um alerta em JS para ler 2 números e apresentar a soma deles depois -->
+    <script>
+        // lendo 2 valores informados pelo usuário e convertendo-os em números inteiros para que a exibição da soma ocorra sem problemas
+        /* Usando Number.parseInt() para forçar a conversão de números para o tipo INTEIRO:
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        */
+
+        // Usando somente Number() para deixar o JS decidir o tipo de dado:
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+
+        // somando os números informados pelo usuário:
+        var s = n1 + n2
+
+        // apresentando o resultado:
+        /* Sem template string:
+        window.alert('Resultado da soma dos números informados: ' + s)
+        */
+
+        // apresentando o resultado da soma com template string:
+        window.alert(`O resultado da soma entre ${n1} e ${n2} é igual a ${s}`)
+    </script>
+</body>
+</html>
