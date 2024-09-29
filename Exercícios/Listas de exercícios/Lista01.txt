@@ -1,0 +1,7 @@
+Usando window.alert e window.prompt em <script></script> dentro do código HTML, realize as seguintes operações:
+
+1- Soma entre 2 números
+2- Subtração entre 2 números
+3- Multiplicação entre 3 números
+4- Divisão entre 2 números
+5- Conversão de Number para String
