@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <!-- Mexendo com DOM -->
+    <script>
+        /* window.document.write(window.document.URL) */ //puxa a URL do documento
+
+        // fazendo a seleção de elementos
+        var p1 = window.document.getElementsByTagName('p')[1] // seleciona parágrafos (no caso, vai selecionar o parágrafo 1)
+        /* window.document.write('Está escrito assim: ' + p1.innerText) */ // escreve na tela o texto do 1o parágrafo
+        
+        /* window.document.write(p1.innerHTML) */ // escreve o parágrafo 1 exatamente com a mesma formatação HTML
+        /* window.document.write(p1.innerText) */ // escreve o parágrafo 1 sem a formatação HTML
+
+        // Mudando a cor de um paragráfo
+        p1.style.color = 'blue'
+
+        // Mexendo com getElementsById
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.background = 'pink'
+        */
+
+        // Usando querySelector para "economizar linhas de comando"
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'magenta'
+    </script>
+</body>
+</html>
