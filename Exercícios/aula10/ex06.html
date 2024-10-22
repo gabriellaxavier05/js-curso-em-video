@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 20pt Arial;
+            background: rosybrown;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- disparando eventos com métodos dentro do elemento HTML-->
+    <!-- <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> Aqui os eventos são disparados pelo HTML -->
+    <div id="area"> <!-- Quando eu executar essas ações... -->
+        <p>Interaja...</p>
+    </div>
+
+    <!-- JS -->
+     <script>
+        // Criando o bloco
+
+        /* Modelo 1 - 1o exemplo
+        function clicar(){
+            // Configurando o método clicar() para o que acontecerá quando a ação for executada
+            var area = window.document.getElementById('area')
+            area.innerText = 'Clicou!'
+            // O que acontece quando o usuário clicar na div: o texto da div "area" mudará para "Clicou!" quando for clicada.
+        }
+        */
+
+        /* Modelo 2 - 2o exemplo */
+        var area = window.document.getElementById('area') // Estando do "lado de fora" serve para todos os outros métodos
+        /* Disparando eventos pelo próprio JS */
+        area.addEventListener('click', clicar) // quando a div for clicada, o método clicar() será chamado
+        area.addEventListener('mouseenter', entrar) // quando o mouse parar em cima da div, o método entrar() será chamado
+        area.addEventListener('mouseout', sair) // quando o mouse sair de cima da div, o método sair() será chamado
+
+        function clicar(){
+            area.innerText = 'Clicou!' // Muda o texto da div ao clicar nela
+            area.style.background = 'red' // Muda o cor do fundo da div ao clicar nela
+        }
+        
+        function entrar(){
+            area.innerText = 'Entrou!' // Muda o texto da div ao passar o mouse em cima dela
+        }
+        
+        function sair(){
+            area.innerText = 'Saiu!' // Muda o texto da div ao tirar o mouse de cima dela
+        }
+     </script>
+</body>
+</html>
