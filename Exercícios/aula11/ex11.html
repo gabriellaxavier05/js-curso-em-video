@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de nacionalidade</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #f1fffa, #ccfccb);
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        #nac { 
+            width: 370px;
+            height: 40px;
+            text-align: center;
+            font-size: 16px;
+            border: 1px solid #B7B7B7;
+            border-radius: 5px;
+        }
+
+        #btn {
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: 600; /* espessura da fonte */
+            width: 150px;
+            height: 40px;
+            background-color: #fff;
+            border: none;
+            border-radius: 5px; /* arredondamento das bordas */
+            cursor: pointer; /* cursor em forma de mão */
+            letter-spacing: 0.75px; /* espaçamento entre as letras do botão */
+        }
+        
+        #btn:hover {
+            background-color: #49a078; /* Cor de fundo ao passar o mouse */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de nacionalidade</h1>
+    <input type="text" placeholder="Informe seu país de nascimento" name="txtn" id="nac">
+    <br>
+    <input type="button" value="Verificar" id="btn" onclick="verificaNac()"> <!-- Quando o botão é pressionado, a função verificarNac() é chamada -->
+    <br><br>
+    <div id="res">
+        <!-- A resposta aparecerá aqui -->
+    </div>
+
+    <!-- Implementando o JS -->
+    <script>
+        // criando a função verificaNac()
+        function verificaNac() {
+            var tn = window.document.querySelector('input#nac') // faz referência ao input cujo id é 'nac'
+            var res = window.document.querySelector('div#res') // faz referência a div cujo id é 'res'
+            var n = tn.value // acessa a propriedade 'value' do input de texto e armazena na variável 'n'
+
+            res.innerHTML = `<p>País de nascimento informado: <strong>${n}</strong>.</p>` // o 'p' está dentro da div 'res'
+
+
+            // criando as condições
+            if (n == 'Brasil') { // se a condição for verdadeira
+                res.innerHTML += `<p>Você é <strong>brasileiro(a)</strong>! ✌🏼</p>` // o += é para não apagar a mensagem anterior
+            }
+            else { // se a condição for falsa
+                res.innerHTML += `<p>Você é <strong>estrangeiro(a)</strong>! 🥱</p>` // o 'p' está dentro da div 'res'
+
+            }
+        }
+    </script>
+</body>
+</html>
