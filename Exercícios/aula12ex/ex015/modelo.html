@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+     <header>
+        <h1>Verificador de Idade</h1>
+     </header>
+    <!-- Seção -->
+      <section>
+        <!-- div 1 -->
+        <div> 
+            <p>
+                Ano de nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="femi">
+                <label for="femi">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" id="btn" onclick="verificar()"> <!-- quando o botão for pressionado, a função verificar() será chamada -->
+            </p>
+        </div>
+        <!-- div 2 -->
+         <div id="res">
+            Preencha os dados acima para ver o resultado!
+         </div>
+      </section>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; GabriellaXavier</p> <!-- Símbolo de copyright-->
+    </footer>
+    <script src="script.js"></script> <!-- JS externo -->
+</body>
+</html>
