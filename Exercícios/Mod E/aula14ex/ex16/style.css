@@ -1,0 +1,43 @@
+/* Configurando os elementos da página */
+body {
+    background: #c5c3c6;
+    font: normal 15pt Arial;
+    text-align: justify;
+}
+
+header{
+    text-align: center;
+}
+
+section {
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    width: 500px;
+    margin: auto; /* para centralizar */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.312);
+}
+
+footer {
+    font-style: italic;
+    text-align: center;
+}
+
+input[type="number"] { /* input tipo number */
+    font-size: 16px; /* Tamanho da fonte */
+    border: 1px solid #b8b7b7; /* Cor da borda */
+    border-radius: 3px; /* Bordas arredondadas */
+    width: 150px; 
+    padding: 5px;
+    margin-left: 10px;
+}
+
+input[type="button"] {
+    font-size: 16px;
+    width: 100px;
+    height: 35px;
+}
+
+input[type="button"]:hover { /* efeito de quando passar o mouse em cime do btn */
+    cursor: pointer;
+}

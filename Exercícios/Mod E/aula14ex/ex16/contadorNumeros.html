@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+     <header>
+        <h1>Vamos contar...</h1>
+     </header>
+     
+    <!-- Seção -->
+      <section>     
+        <!-- div 1 -->
+        <div id="dados"> 
+            <label for="">Início:</label>
+            <input type="number" name="inicio" id="txti">
+            <br><br>
+
+            <label for="">Fim:</label>
+            <input type="number" name="fim" id="txtf">
+            <br><br>
+
+            <label for="">Passo:</label>
+            <input type="number" name="passo" id="txtp">
+            <p><input type="button" value="Contar" onclick="contar()"></p> <!-- Quando o botão "Contar" for pressionado, a função contar() será chamada -->
+        </div>
+        
+        <br>
+
+        <!-- div 2 -->
+         <div id="res">
+            Preparando a contagem...
+         </div>
+      </section>
+    
+      <!-- Rodapé -->
+    <footer>
+        <p>&copy; GabriellaXavier</p> <!-- Símbolo de copyright-->
+    </footer>
+    <!-- Ligação com o código JS -->
+    <script src="script.js"></script>
+</body>
+</html>
