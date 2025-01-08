@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+     <header>
+        <h1>Tabuada</h1>
+     </header>
+    <!-- Seção -->
+      <section>
+        <!-- div 1 -->
+
+        <div id="inputs"> 
+            <label for="">Número:</label> 
+            <input type="number" name="num" id="txtn">
+            <input type="button" value="Gerar Tabuada" id="btnTab" onclick="tabuada()"> <!-- chama a função tabuada() quando o botão é clicado -->
+            <input type="button" value="Limpar" id="btnLimpar" onclick="limpaRes()"> <!-- chama a função limpaRes() quando o botão é pressionado -->
+        </div>
+
+        <br>
+
+        <!-- div 2 -->
+         <div>
+            <select name="tabuada" id="seltab" size="10">
+                <option>Digite um número:</option>
+            </select>
+            
+         </div>
+      </section>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; GabriellaXavier</p> <!-- Símbolo de copyright-->
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* Configurando os elementos da página */
+body {
+    background: #c5c3c6;
+    font: normal 15pt Arial;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto; /* para centralizar */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.312);
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+}
+
+input[type="button"] {
+    width: 100px;
+    height: 35px;
+}
+
+input[type="button"]:hover { /* efeito de quando passar o mouse em cime do btn */
+    cursor: pointer;
+}
+
+#btnTab {
+    width: 110px;
+}
+
+#btnLimpar {
+    width: 70px;
+}
+
+#txtn {
+    width: 70px;
+    height: 25px;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+option {
+    width: 170px;
+    padding-left: 20px;
+    font-size: 15px;
+}
