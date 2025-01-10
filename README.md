@@ -10,7 +10,8 @@ Organização das pastas do repositório:
 <br>
 
 Obs.: quanto às subpastas da pasta "Exercícios":
-- aula + número da aula: praticadas junto ao instrutor;
-- treino + número treino: praticadas sozinha, para treino do conteúdo.  
+- aula + número da aula: praticadas junto ao instrutor.
+
+<br>
 
 📹 Link da playlist do curso no YouTube: https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1
