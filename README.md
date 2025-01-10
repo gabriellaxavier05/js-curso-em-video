@@ -5,8 +5,9 @@ Esse repositório armazena as minhas anotações e exercícios práticos que rea
 
 Organização das pastas do repositório:  
 📂 Anotações: PDFs divididos por módulos com as minhas anotações feitas durante o curso.  
-📂 Exercícios: Exercícios praticados durante as aulas ministradas do curso.  
-	📂 Listas de exercíos: Listas de exercíos criadas com a ajuda da IA para treinar JS.  
+📂 Exercícios: Exercícios praticados durante as aulas ministradas do curso.
+
+<br>
 
 Obs.: quanto às subpastas da pasta "Exercícios":
 - aula + número da aula: praticadas junto ao instrutor;
