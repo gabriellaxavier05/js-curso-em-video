@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+     <header>
+        <h1>Analisar de Números</h1>
+     </header>
+    <!-- Seção -->
+      <section>
+        <!-- div 1 -->
+        <div> 
+            Número (entre 1 e 100):
+            <input type="number" name="fnum" id="fnum">
+            <input type="button" value="Adicionar" onclick="adicionar()"> <!-- chama a função adicionar() ao clicar sobre o botão -->
+            <br><br>
+            <select name="flista" id="flista" size="6"></select>
+            <br>
+            <input type="button" value="Finalizar" onclick="finalizar()"> <!-- chama a função finalizar() ao clicar sobre o botão -->
+        </div>
+        <!-- div 2 -->
+        <div id="res">
+
+         </div>
+      </section>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; GabriellaXavier</p> <!-- Símbolo de copyright-->
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
